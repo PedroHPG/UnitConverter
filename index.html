@@ -34,120 +34,138 @@
             </ul>
         </div>
         <!--The selectors below will be hidden or revealed based on the selected type-->
+        <form>
+            <!--WEIGHT UNITS-->
+            <!--Selector for unit 1-->
+            <div class="dropdown weight">
+                <button class="btn btn-default dropdown-toggle" type="button" id="weightInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">kg</a></li>
+                    <li><a href="#">lbs</a></li>
+                </ul>
+            </div>
+            <!--Text field to enter unit 1 value-->
+            <div class="form-group">
+                <label for="weightInput">Weight</label>
+                <input type="number" class="form-control" id="weightInput" placeholder="Weight">
+            </div>
+            <!--Selector for unit 2-->
+            <div class="dropdown weight">
+                <button class="btn btn-default dropdown-toggle" type="button" id="weightOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">kg</a></li>
+                    <li><a href="#">lbs</a></li>
+                </ul>
+            </div>
+            <!--Return value in unit 2-->
 
-        <!--WEIGHT UNITS-->
-        <!--Selector for unit 1-->
-        <div class="dropdown weight">
-            <button class="btn btn-default dropdown-toggle" type="button" id="weightInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">kg</a></li>
-                <li><a href="#">lbs</a></li>
-            </ul>
-        </div>
-        <!--Text field to enter unit 1 value-->
-        <!--Selector for unit 2-->
-        <div class="dropdown weight">
-            <button class="btn btn-default dropdown-toggle" type="button" id="weightOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">kg</a></li>
-                <li><a href="#">lbs</a></li>
-            </ul>
-        </div>
-        <!--Return value in unit 2-->
+            <!--LENGTH UNITS-->
+            <!--Selector for unit 1-->
+            <div class="dropdown length">
+                <button class="btn btn-default dropdown-toggle" type="button" id="lengthInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">cm</a></li>
+                    <li><a href="#">inch</a></li>
+                    <li><a href="#">meter</a></li>
+                    <li><a href="#">yard</a></li>
+                </ul>
+            </div>
+            <!--Text field to enter unit 1 value-->
+            <div class="form-group">
+                <label for="lengthInput">Length</label>
+                <input type="number" class="form-control" id="lengthInput" placeholder="Length">
+            </div>
+            <!--Selector for unit 2-->
+            <div class="dropdown length">
+                <button class="btn btn-default dropdown-toggle" type="button" id="lengthOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">cm</a></li>
+                    <li><a href="#">inch</a></li>
+                    <li><a href="#">meter</a></li>
+                    <li><a href="#">yard</a></li>
+                </ul>
+            </div>
+            <!--Return value in unit 2-->
 
-        <!--LENGTH UNITS-->
-        <!--Selector for unit 1-->
-        <div class="dropdown length">
-            <button class="btn btn-default dropdown-toggle" type="button" id="lengthInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">cm</a></li>
-                <li><a href="#">inch</a></li>
-                <li><a href="#">meter</a></li>
-                <li><a href="#">yard</a></li>
-            </ul>
-        </div>
-        <!--Text field to enter unit 1 value-->
-        <!--Selector for unit 2-->
-        <div class="dropdown length">
-            <button class="btn btn-default dropdown-toggle" type="button" id="lengthOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">cm</a></li>
-                <li><a href="#">inch</a></li>
-                <li><a href="#">meter</a></li>
-                <li><a href="#">yard</a></li>
-            </ul>
-        </div>
-        <!--Return value in unit 2-->
+            <!--DISTANCE UNITS-->
+            <!--Selector for unit 1-->
+            <div class="dropdown distance">
+                <button class="btn btn-default dropdown-toggle" type="button" id="distanceInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">km</a></li>
+                    <li><a href="#">mile</a></li>
+                </ul>
+            </div>
+            <!--Text field to enter unit 1 value-->
+            <div class="form-group">
+                <label for="distanceInput">Distance</label>
+                <input type="number" class="form-control" id="distanceInput" placeholder="Distance">
+            </div>
+            <!--Selector for unit 2-->
+            <div class="dropdown distance">
+                <button class="btn btn-default dropdown-toggle" type="button" id="distanceOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">km</a></li>\
+                    <li><a href="#">mile</a></li>
+                </ul>
+            </div>
+            <!--Return value in unit 2-->
 
-        <!--DISTANCE UNITS-->
-        <!--Selector for unit 1-->
-        <div class="dropdown distance">
-            <button class="btn btn-default dropdown-toggle" type="button" id="distanceInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">km</a></li>
-                <li><a href="#">mile</a></li>
-            </ul>
-        </div>
-        <!--Text field to enter unit 1 value-->
-        <!--Selector for unit 2-->
-        <div class="dropdown distance">
-            <button class="btn btn-default dropdown-toggle" type="button" id="distanceOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">km</a></li>\
-                <li><a href="#">mile</a></li>
-            </ul>
-        </div>
-        <!--Return value in unit 2-->
+            <!--TEMPERATURE UNITS-->
+            <!--Selector for unit 1-->
+            <div class="dropdown temperature">
+                <button class="btn btn-default dropdown-toggle" type="button" id="temperatureInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Celsius</a></li>
+                    <li><a href="#">Fahrenheit</a></li>
+                    <li><a href="#">Kelvin</a></li>
+                </ul>
+            </div>
+            <!--Text field to enter unit 1 value-->
+            <div class="form-group">
+                <label for="temperatureInput">Temperature</label>
+                <input type="number" class="form-control" id="temperatureInput" placeholder="Temperature">
+            </div>
+            <!--Selector for unit 2-->
+            <div class="dropdown temperature">
+                <button class="btn btn-default dropdown-toggle" type="button" id="temperatureOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Select Unit
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Celsius</a></li>
+                    <li><a href="#">Fahrenheit</a></li>
+                    <li><a href="#">Kelvin</a></li>
+                </ul>
+            </div>
+            <!--Return value in unit 2-->
 
-        <!--TEMPERATURE UNITS-->
-        <!--Selector for unit 1-->
-        <div class="dropdown temperature">
-            <button class="btn btn-default dropdown-toggle" type="button" id="temperatureInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Celsius</a></li>
-                <li><a href="#">Fahrenheit</a></li>
-                <li><a href="#">Kelvin</a></li>
-            </ul>
-        </div>
-        <!--Text field to enter unit 1 value-->
-        <!--Selector for unit 2-->
-        <div class="dropdown temperature">
-            <button class="btn btn-default dropdown-toggle" type="button" id="temperatureOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Celsius</a></li>
-                <li><a href="#">Fahrenheit</a></li>
-                <li><a href="#">Kelvin</a></li>
-            </ul>
-        </div>
-        <!--Return value in unit 2-->
-
-        <!--CONVERT button-->
-        <!--SWAP button-->
-
+            <!--CONVERT button-->
+            <button type="submit" class="btn btn-primary">CONVERT</button>
+            <!--SWAP button-->
+            <button type="submit" class="btn btn-primary">SWAP</button>
+        </form>
         <!--Error messages to be displayed if user does something wrong-->
 
         <script src="index.js"></script>
