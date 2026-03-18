@@ -1,16 +1,25 @@
 //Constants for convertion, using metric as the baseline
-const kg = 1;
-const lbs = 0.4535924;
+const units = {
 
-const cm = 1;
-const inch = 2.54;
-const meter = 100;
-const yard = 91.44;
+"kg": 1,
+"lbs": 0.4535924,
 
-const km = 1;
-const mile = 1.609344;
+"cm": 1,
+"inch": 2.54,
+"meter": 100,
+"yard": 91.44,
+
+"km": 1,
+"mile": 1.609344
+
+}
 
 //Function for unit convertion
+function convert(value, unit1, unit2){
+    let rate1 = units[unit1];
+    let rate2 = units[unit2];
+    return (value * rate1) / rate2;
+}
 
 //Function for temperature conversion
 function tempConvert(input, output, value){
