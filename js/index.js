@@ -22,7 +22,13 @@ function getUnits(){
 
 //Function to get the currently input value
 function getValue(){
-    
+    let elements = document.getElementsByClassName("input-value")
+    for(let element of elements){
+        if(window.getComputedStyle(element).display != "none"){
+            return document.getElementById(element).value;
+        }
+    }
+    return null;
 }
 
 //Function to swap the current units
