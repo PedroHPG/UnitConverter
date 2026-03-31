@@ -22,7 +22,7 @@ function getUnits(){
 
 //Function to get the currently input value
 function getValue(){
-
+    
 }
 
 //Function to swap the current units
