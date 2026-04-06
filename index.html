@@ -22,30 +22,22 @@
 
         <!--Selector for type of units-->
         <div class="dropdown">
-            <button class="btn btn-default dropdown-toggle" type="button" id="unitTypeMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                Select Unit Type
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-                <li><a href="#">Weight</a></li>
-                <li><a href="#">Length</a></li>
-                <li><a href="#">Distance</a></li>
-                <li><a href="#">Temperature</a></li>
-            </ul>
+            <select name="UnitTypeMenu" id="unitTypeMenu">
+                <option value="1">Weight</option>
+                <option value="2">Length</option>
+                <option value="3">Distance</option>
+                <option value="4">Temperature</option>
+            </select>
         </div>
         <!--The selectors below will be hidden or revealed based on the selected type-->
         <form>
             <!--WEIGHT UNITS-->
             <!--Selector for unit 1-->
             <div class="dropdown weight">
-                <button class="btn btn-default dropdown-toggle" type="button" id="weightInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">kg</a></li>
-                    <li><a href="#">lbs</a></li>
-                </ul>
+                <select name="WeightInputMenu" id="weightInputMenu">
+                    <option value="1">kg</option>
+                    <option value="2">lbs</option>
+                </select>
             </div>
             <!--Text field to enter unit 1 value-->
             <div class="form-group">
@@ -54,14 +46,10 @@
             </div>
             <!--Selector for unit 2-->
             <div class="dropdown weight">
-                <button class="btn btn-default dropdown-toggle" type="button" id="weightOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">kg</a></li>
-                    <li><a href="#">lbs</a></li>
-                </ul>
+                <select name="WeightOutputMenu" id="weightOutputMenu">
+                    <option value="1">kg</option>
+                    <option value="2">lbs</option>
+                </select>
             </div>
             <!--Return value in unit 2-->
             <label for="weight-result">Converted Value:</label>
@@ -70,16 +58,12 @@
             <!--LENGTH UNITS-->
             <!--Selector for unit 1-->
             <div class="dropdown length">
-                <button class="btn btn-default dropdown-toggle" type="button" id="lengthInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">cm</a></li>
-                    <li><a href="#">inch</a></li>
-                    <li><a href="#">meter</a></li>
-                    <li><a href="#">yard</a></li>
-                </ul>
+                <select name="LengthInputMenu" id="lenghtInputMenu">
+                    <option value="1">cm</option>
+                    <option value="2">inch</option>
+                    <option value="3">meter</option>
+                    <option value="4">yard</option>
+                </select>
             </div>
             <!--Text field to enter unit 1 value-->
             <div class="form-group">
@@ -88,16 +72,12 @@
             </div>
             <!--Selector for unit 2-->
             <div class="dropdown length">
-                <button class="btn btn-default dropdown-toggle" type="button" id="lengthOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">cm</a></li>
-                    <li><a href="#">inch</a></li>
-                    <li><a href="#">meter</a></li>
-                    <li><a href="#">yard</a></li>
-                </ul>
+                <select name="LengthOutputMenu" id="lenghtOutputMenu">
+                    <option value="1">cm</option>
+                    <option value="2">inch</option>
+                    <option value="3">meter</option>
+                    <option value="4">yard</option>
+                </select>
             </div>
             <!--Return value in unit 2-->
             <label for="length-result">Converted Value:</label>
@@ -106,14 +86,10 @@
             <!--DISTANCE UNITS-->
             <!--Selector for unit 1-->
             <div class="dropdown distance">
-                <button class="btn btn-default dropdown-toggle" type="button" id="distanceInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">km</a></li>
-                    <li><a href="#">mile</a></li>
-                </ul>
+                <select name="DistanceInputMenu" id="DistanceInputMenu">
+                    <option value="1">km</option>
+                    <option value="2">mile</option>
+                </select>
             </div>
             <!--Text field to enter unit 1 value-->
             <div class="form-group">
@@ -122,14 +98,10 @@
             </div>
             <!--Selector for unit 2-->
             <div class="dropdown distance">
-                <button class="btn btn-default dropdown-toggle" type="button" id="distanceOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">km</a></li>\
-                    <li><a href="#">mile</a></li>
-                </ul>
+                <select name="DistanceOutputMenu" id="DistanceOutputMenu">
+                    <option value="1">km</option>
+                    <option value="2">mile</option>
+                </select>
             </div>
             <!--Return value in unit 2-->
             <label for="distance-result">Converted Value:</label>
@@ -138,15 +110,11 @@
             <!--TEMPERATURE UNITS-->
             <!--Selector for unit 1-->
             <div class="dropdown temperature">
-                <button class="btn btn-default dropdown-toggle" type="button" id="temperatureInputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Celsius</a></li>
-                    <li><a href="#">Fahrenheit</a></li>
-                    <li><a href="#">Kelvin</a></li>
-                </ul>
+                <select name="TemperatureInputMenu" id="TemperatureInputMenu">
+                    <option value="1">Celsius</option>
+                    <option value="2">Fahrenheit</option>
+                    <option value="3">Kelvin</option>
+                </select>
             </div>
             <!--Text field to enter unit 1 value-->
             <div class="form-group">
@@ -155,15 +123,11 @@
             </div>
             <!--Selector for unit 2-->
             <div class="dropdown temperature">
-                <button class="btn btn-default dropdown-toggle" type="button" id="temperatureOutputMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    Select Unit
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Celsius</a></li>
-                    <li><a href="#">Fahrenheit</a></li>
-                    <li><a href="#">Kelvin</a></li>
-                </ul>
+                <select name="TemperatureOutputMenu" id="TemperatureOutputMenu">
+                    <option value="1">Celsius</option>
+                    <option value="2">Fahrenheit</option>
+                    <option value="3">Kelvin</option>
+                </select>
             </div>
             <!--Return value in unit 2-->
             <label for="temperature-result">Converted Value:</label>
