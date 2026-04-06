@@ -17,7 +17,16 @@ const units = {
 
 //Function to get the units for conversion
 function getUnits(){
-    
+    let units = [];
+
+    let elements = document.getElementsByClassName("unit-choice")
+    for(let element of elements){
+        if(window.getComputedStyle(element).display != "none"){
+            units.push(element.selectedOptions[0]?.text);
+        }
+    }
+
+    return units;
 }
 
 //Function to get the currently input value
