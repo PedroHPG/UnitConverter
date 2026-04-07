@@ -41,8 +41,21 @@ function getValue(){
 }
 
 //Function to swap the current units
-function swapValues(){
-
+function swapUnits(){
+    let units = getUnits();
+    let unit1 = units[1];
+    let unit2 = units[0];
+    
+    let elements = document.getElementsByClassName("unit-choice")
+    for(let element of elements){
+        if(window.getComputedStyle(element).display != "none"){
+            if(element = elements[0]){
+                element.value = unit1;
+            }else{
+                element.value = unit2;
+            }
+        }
+    }
 }
 
 //Function for unit convertion
